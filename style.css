@@ -42,7 +42,6 @@ color: white;
 
 .header-menu .header-menu-item:hover{
     transform: scale(1.2);
-    color: red;
 }
 
 /* *******MAİN******** */
@@ -57,11 +56,53 @@ main .container{
     width: 100%;
     height: 100%;
     display: flex;
+
 }
 
 main .container .container-info{
     display: flex;
     width: calc(100% - 380px);
+    flex-direction: column;
+    margin-top: 100px;
+    justify-content: center;
+    
+}
+
+.text-info{
+    color:white;
+    margin-bottom: 50px;
+    margin-top: -200px;
+}
+
+.text-info h3{
+    margin-bottom: 12px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.text-info span{
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.button-info{
+    display: flex;
+    gap: 30px;
+}
+
+.button-info button{
+    background-color: rgb(246, 246, 194);
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.button-info button:hover{
+    transform: scale(1.1);
 }
 
 main .container .container-image{
@@ -71,6 +112,43 @@ main .container .container-image{
 main .container .container-image img{
     width: 380px;
     height: 100%;
+}
+
+
+
+/* *********FOOTER*********** */
+
+
+footer{
+    position: absolute;
+    right: 25px;
+    top:50%;
+}
+
+footer .social-item{
+    font-size: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.instagram:hover{
+    background-color: #e4405f;
+    color: white;
+}
+.github:hover{
+    background-color: #171515;
+    color: white;
+}
+.linkedin:hover{
+    background-color: #0a66c2;
+    color: white    ;
 }
 
 
